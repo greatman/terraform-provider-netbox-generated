@@ -1,0 +1,1337 @@
+{
+	"datasources": [
+		{
+			"name": "site",
+			"schema": {
+				"attributes": [
+					{
+						"name": "id",
+						"int64": {
+							"computed_optional_required": "required",
+							"description": "A unique integer value identifying this site."
+						}
+					},
+					{
+						"name": "asns",
+						"list_nested": {
+							"computed_optional_required": "computed",
+							"nested_object": {
+								"attributes": [
+									{
+										"name": "asn",
+										"int64": {
+											"computed_optional_required": "computed",
+											"description": "16- or 32-bit autonomous system number"
+										}
+									},
+									{
+										"name": "comments",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "created",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "custom_fields",
+										"map": {
+											"computed_optional_required": "computed",
+											"element_type": {
+												"string": {}
+											}
+										}
+									},
+									{
+										"name": "description",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "display",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "display_url",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "id",
+										"int64": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "last_updated",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "provider_count",
+										"int64": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "rir",
+										"single_nested": {
+											"computed_optional_required": "computed",
+											"attributes": [
+												{
+													"name": "aggregate_count",
+													"int64": {
+														"computed_optional_required": "computed"
+													}
+												},
+												{
+													"name": "description",
+													"string": {
+														"computed_optional_required": "computed"
+													}
+												},
+												{
+													"name": "display",
+													"string": {
+														"computed_optional_required": "computed"
+													}
+												},
+												{
+													"name": "id",
+													"int64": {
+														"computed_optional_required": "computed"
+													}
+												},
+												{
+													"name": "name",
+													"string": {
+														"computed_optional_required": "computed"
+													}
+												},
+												{
+													"name": "slug",
+													"string": {
+														"computed_optional_required": "computed"
+													}
+												},
+												{
+													"name": "url",
+													"string": {
+														"computed_optional_required": "computed"
+													}
+												}
+											],
+											"description": "Adds support for custom fields and tags."
+										}
+									},
+									{
+										"name": "site_count",
+										"int64": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "tags",
+										"list_nested": {
+											"computed_optional_required": "computed",
+											"nested_object": {
+												"attributes": [
+													{
+														"name": "color",
+														"string": {
+															"computed_optional_required": "computed"
+														}
+													},
+													{
+														"name": "display",
+														"string": {
+															"computed_optional_required": "computed"
+														}
+													},
+													{
+														"name": "display_url",
+														"string": {
+															"computed_optional_required": "computed"
+														}
+													},
+													{
+														"name": "id",
+														"int64": {
+															"computed_optional_required": "computed"
+														}
+													},
+													{
+														"name": "name",
+														"string": {
+															"computed_optional_required": "computed"
+														}
+													},
+													{
+														"name": "slug",
+														"string": {
+															"computed_optional_required": "computed"
+														}
+													},
+													{
+														"name": "url",
+														"string": {
+															"computed_optional_required": "computed"
+														}
+													}
+												]
+											}
+										}
+									},
+									{
+										"name": "tenant",
+										"single_nested": {
+											"computed_optional_required": "computed",
+											"attributes": [
+												{
+													"name": "description",
+													"string": {
+														"computed_optional_required": "computed"
+													}
+												},
+												{
+													"name": "display",
+													"string": {
+														"computed_optional_required": "computed"
+													}
+												},
+												{
+													"name": "id",
+													"int64": {
+														"computed_optional_required": "computed"
+													}
+												},
+												{
+													"name": "name",
+													"string": {
+														"computed_optional_required": "computed"
+													}
+												},
+												{
+													"name": "slug",
+													"string": {
+														"computed_optional_required": "computed"
+													}
+												},
+												{
+													"name": "url",
+													"string": {
+														"computed_optional_required": "computed"
+													}
+												}
+											],
+											"description": "Adds support for custom fields and tags."
+										}
+									},
+									{
+										"name": "url",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"name": "circuit_count",
+						"int64": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "comments",
+						"string": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "created",
+						"string": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "custom_fields",
+						"map": {
+							"computed_optional_required": "computed",
+							"element_type": {
+								"string": {}
+							}
+						}
+					},
+					{
+						"name": "description",
+						"string": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "device_count",
+						"int64": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "display",
+						"string": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "display_url",
+						"string": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "facility",
+						"string": {
+							"computed_optional_required": "computed",
+							"description": "Local facility ID or description"
+						}
+					},
+					{
+						"name": "group",
+						"single_nested": {
+							"computed_optional_required": "computed",
+							"attributes": [
+								{
+									"name": "_depth",
+									"int64": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "description",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "display",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "id",
+									"int64": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "name",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "site_count",
+									"int64": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "slug",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "url",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								}
+							],
+							"description": "Extends PrimaryModelSerializer to include MPTT support."
+						}
+					},
+					{
+						"name": "last_updated",
+						"string": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "latitude",
+						"float64": {
+							"computed_optional_required": "computed",
+							"description": "GPS coordinate in decimal format (xx.yyyyyy)"
+						}
+					},
+					{
+						"name": "longitude",
+						"float64": {
+							"computed_optional_required": "computed",
+							"description": "GPS coordinate in decimal format (xx.yyyyyy)"
+						}
+					},
+					{
+						"name": "name",
+						"string": {
+							"computed_optional_required": "computed",
+							"description": "Full name of the site"
+						}
+					},
+					{
+						"name": "physical_address",
+						"string": {
+							"computed_optional_required": "computed",
+							"description": "Physical location of the building"
+						}
+					},
+					{
+						"name": "prefix_count",
+						"int64": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "rack_count",
+						"int64": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "region",
+						"single_nested": {
+							"computed_optional_required": "computed",
+							"attributes": [
+								{
+									"name": "_depth",
+									"int64": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "description",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "display",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "id",
+									"int64": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "name",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "site_count",
+									"int64": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "slug",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "url",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								}
+							],
+							"description": "Extends PrimaryModelSerializer to include MPTT support."
+						}
+					},
+					{
+						"name": "shipping_address",
+						"string": {
+							"computed_optional_required": "computed",
+							"description": "If different from the physical address"
+						}
+					},
+					{
+						"name": "slug",
+						"string": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "status",
+						"single_nested": {
+							"computed_optional_required": "computed",
+							"attributes": [
+								{
+									"name": "label",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "value",
+									"string": {
+										"computed_optional_required": "computed",
+										"description": "* `planned` - Planned\n* `staging` - Staging\n* `active` - Active\n* `decommissioning` - Decommissioning\n* `retired` - Retired"
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "tags",
+						"list_nested": {
+							"computed_optional_required": "computed",
+							"nested_object": {
+								"attributes": [
+									{
+										"name": "color",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "display",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "display_url",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "id",
+										"int64": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "name",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "slug",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "url",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"name": "tenant",
+						"single_nested": {
+							"computed_optional_required": "computed",
+							"attributes": [
+								{
+									"name": "description",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "display",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "id",
+									"int64": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "name",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "slug",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "url",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								}
+							],
+							"description": "Adds support for custom fields and tags."
+						}
+					},
+					{
+						"name": "time_zone",
+						"string": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "url",
+						"string": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "virtualmachine_count",
+						"int64": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "vlan_count",
+						"int64": {
+							"computed_optional_required": "computed"
+						}
+					}
+				]
+			}
+		}
+	],
+	"provider": {
+		"name": "netbox"
+	},
+	"resources": [
+		{
+			"name": "site",
+			"schema": {
+				"attributes": [
+					{
+						"name": "asns",
+						"list": {
+							"computed_optional_required": "computed_optional",
+							"element_type": {
+								"int64": {}
+							}
+						}
+					},
+					{
+						"name": "comments",
+						"string": {
+							"computed_optional_required": "computed_optional"
+						}
+					},
+					{
+						"name": "custom_fields",
+						"map": {
+							"computed_optional_required": "computed_optional",
+							"element_type": {
+								"string": {}
+							}
+						}
+					},
+					{
+						"name": "description",
+						"string": {
+							"computed_optional_required": "computed_optional",
+							"validators": [
+								{
+									"custom": {
+										"imports": [
+											{
+												"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+											}
+										],
+										"schema_definition": "stringvalidator.LengthAtMost(200)"
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "facility",
+						"string": {
+							"computed_optional_required": "computed_optional",
+							"description": "Local facility ID or description",
+							"validators": [
+								{
+									"custom": {
+										"imports": [
+											{
+												"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+											}
+										],
+										"schema_definition": "stringvalidator.LengthAtMost(50)"
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "group",
+						"single_nested": {
+							"computed_optional_required": "computed_optional",
+							"attributes": [
+								{
+									"name": "description",
+									"string": {
+										"computed_optional_required": "computed_optional",
+										"validators": [
+											{
+												"custom": {
+													"imports": [
+														{
+															"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+														}
+													],
+													"schema_definition": "stringvalidator.LengthAtMost(200)"
+												}
+											}
+										]
+									}
+								},
+								{
+									"name": "name",
+									"string": {
+										"computed_optional_required": "required",
+										"validators": [
+											{
+												"custom": {
+													"imports": [
+														{
+															"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+														}
+													],
+													"schema_definition": "stringvalidator.LengthBetween(1, 100)"
+												}
+											}
+										]
+									}
+								},
+								{
+									"name": "slug",
+									"string": {
+										"computed_optional_required": "required",
+										"validators": [
+											{
+												"custom": {
+													"imports": [
+														{
+															"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+														}
+													],
+													"schema_definition": "stringvalidator.LengthBetween(1, 100)"
+												}
+											},
+											{
+												"custom": {
+													"imports": [
+														{
+															"path": "regexp"
+														},
+														{
+															"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+														}
+													],
+													"schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^[-a-zA-Z0-9_]+$\"), \"\")"
+												}
+											}
+										]
+									}
+								},
+								{
+									"name": "_depth",
+									"int64": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "display",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "id",
+									"int64": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "site_count",
+									"int64": {
+										"computed_optional_required": "computed",
+										"default": {
+											"static": 0
+										}
+									}
+								},
+								{
+									"name": "url",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								}
+							],
+							"description": "Extends PrimaryModelSerializer to include MPTT support."
+						}
+					},
+					{
+						"name": "latitude",
+						"float64": {
+							"computed_optional_required": "computed_optional",
+							"description": "GPS coordinate in decimal format (xx.yyyyyy)"
+						}
+					},
+					{
+						"name": "longitude",
+						"float64": {
+							"computed_optional_required": "computed_optional",
+							"description": "GPS coordinate in decimal format (xx.yyyyyy)"
+						}
+					},
+					{
+						"name": "name",
+						"string": {
+							"computed_optional_required": "required",
+							"description": "Full name of the site",
+							"validators": [
+								{
+									"custom": {
+										"imports": [
+											{
+												"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+											}
+										],
+										"schema_definition": "stringvalidator.LengthBetween(1, 100)"
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "physical_address",
+						"string": {
+							"computed_optional_required": "computed_optional",
+							"description": "Physical location of the building",
+							"validators": [
+								{
+									"custom": {
+										"imports": [
+											{
+												"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+											}
+										],
+										"schema_definition": "stringvalidator.LengthAtMost(200)"
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "region",
+						"single_nested": {
+							"computed_optional_required": "computed_optional",
+							"attributes": [
+								{
+									"name": "description",
+									"string": {
+										"computed_optional_required": "computed_optional",
+										"validators": [
+											{
+												"custom": {
+													"imports": [
+														{
+															"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+														}
+													],
+													"schema_definition": "stringvalidator.LengthAtMost(200)"
+												}
+											}
+										]
+									}
+								},
+								{
+									"name": "name",
+									"string": {
+										"computed_optional_required": "required",
+										"validators": [
+											{
+												"custom": {
+													"imports": [
+														{
+															"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+														}
+													],
+													"schema_definition": "stringvalidator.LengthBetween(1, 100)"
+												}
+											}
+										]
+									}
+								},
+								{
+									"name": "slug",
+									"string": {
+										"computed_optional_required": "required",
+										"validators": [
+											{
+												"custom": {
+													"imports": [
+														{
+															"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+														}
+													],
+													"schema_definition": "stringvalidator.LengthBetween(1, 100)"
+												}
+											},
+											{
+												"custom": {
+													"imports": [
+														{
+															"path": "regexp"
+														},
+														{
+															"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+														}
+													],
+													"schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^[-a-zA-Z0-9_]+$\"), \"\")"
+												}
+											}
+										]
+									}
+								},
+								{
+									"name": "_depth",
+									"int64": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "display",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "id",
+									"int64": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "site_count",
+									"int64": {
+										"computed_optional_required": "computed",
+										"default": {
+											"static": 0
+										}
+									}
+								},
+								{
+									"name": "url",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								}
+							],
+							"description": "Extends PrimaryModelSerializer to include MPTT support."
+						}
+					},
+					{
+						"name": "shipping_address",
+						"string": {
+							"computed_optional_required": "computed_optional",
+							"description": "If different from the physical address",
+							"validators": [
+								{
+									"custom": {
+										"imports": [
+											{
+												"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+											}
+										],
+										"schema_definition": "stringvalidator.LengthAtMost(200)"
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "slug",
+						"string": {
+							"computed_optional_required": "required",
+							"validators": [
+								{
+									"custom": {
+										"imports": [
+											{
+												"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+											}
+										],
+										"schema_definition": "stringvalidator.LengthBetween(1, 100)"
+									}
+								},
+								{
+									"custom": {
+										"imports": [
+											{
+												"path": "regexp"
+											},
+											{
+												"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+											}
+										],
+										"schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^[-a-zA-Z0-9_]+$\"), \"\")"
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "status",
+						"string": {
+							"computed_optional_required": "computed_optional",
+							"description": "* `planned` - Planned\n* `staging` - Staging\n* `active` - Active\n* `decommissioning` - Decommissioning\n* `retired` - Retired",
+							"validators": [
+								{
+									"custom": {
+										"imports": [
+											{
+												"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+											}
+										],
+										"schema_definition": "stringvalidator.OneOf(\n\"planned\",\n\"staging\",\n\"active\",\n\"decommissioning\",\n\"retired\",\n)"
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "tags",
+						"list_nested": {
+							"computed_optional_required": "computed_optional",
+							"nested_object": {
+								"attributes": [
+									{
+										"name": "color",
+										"string": {
+											"computed_optional_required": "computed_optional",
+											"validators": [
+												{
+													"custom": {
+														"imports": [
+															{
+																"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+															}
+														],
+														"schema_definition": "stringvalidator.LengthBetween(1, 6)"
+													}
+												},
+												{
+													"custom": {
+														"imports": [
+															{
+																"path": "regexp"
+															},
+															{
+																"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+															}
+														],
+														"schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^[0-9a-f]{6}$\"), \"\")"
+													}
+												}
+											]
+										}
+									},
+									{
+										"name": "name",
+										"string": {
+											"computed_optional_required": "required",
+											"validators": [
+												{
+													"custom": {
+														"imports": [
+															{
+																"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+															}
+														],
+														"schema_definition": "stringvalidator.LengthBetween(1, 100)"
+													}
+												}
+											]
+										}
+									},
+									{
+										"name": "slug",
+										"string": {
+											"computed_optional_required": "required",
+											"validators": [
+												{
+													"custom": {
+														"imports": [
+															{
+																"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+															}
+														],
+														"schema_definition": "stringvalidator.LengthBetween(1, 100)"
+													}
+												},
+												{
+													"custom": {
+														"imports": [
+															{
+																"path": "regexp"
+															},
+															{
+																"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+															}
+														],
+														"schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^[-\\\\w]+$\"), \"\")"
+													}
+												}
+											]
+										}
+									},
+									{
+										"name": "display",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "display_url",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "id",
+										"int64": {
+											"computed_optional_required": "computed"
+										}
+									},
+									{
+										"name": "url",
+										"string": {
+											"computed_optional_required": "computed"
+										}
+									}
+								]
+							}
+						}
+					},
+					{
+						"name": "tenant",
+						"single_nested": {
+							"computed_optional_required": "computed_optional",
+							"attributes": [
+								{
+									"name": "description",
+									"string": {
+										"computed_optional_required": "computed_optional",
+										"validators": [
+											{
+												"custom": {
+													"imports": [
+														{
+															"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+														}
+													],
+													"schema_definition": "stringvalidator.LengthAtMost(200)"
+												}
+											}
+										]
+									}
+								},
+								{
+									"name": "name",
+									"string": {
+										"computed_optional_required": "required",
+										"validators": [
+											{
+												"custom": {
+													"imports": [
+														{
+															"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+														}
+													],
+													"schema_definition": "stringvalidator.LengthBetween(1, 100)"
+												}
+											}
+										]
+									}
+								},
+								{
+									"name": "slug",
+									"string": {
+										"computed_optional_required": "required",
+										"validators": [
+											{
+												"custom": {
+													"imports": [
+														{
+															"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+														}
+													],
+													"schema_definition": "stringvalidator.LengthBetween(1, 100)"
+												}
+											},
+											{
+												"custom": {
+													"imports": [
+														{
+															"path": "regexp"
+														},
+														{
+															"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+														}
+													],
+													"schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^[-a-zA-Z0-9_]+$\"), \"\")"
+												}
+											}
+										]
+									}
+								},
+								{
+									"name": "display",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "id",
+									"int64": {
+										"computed_optional_required": "computed"
+									}
+								},
+								{
+									"name": "url",
+									"string": {
+										"computed_optional_required": "computed"
+									}
+								}
+							],
+							"description": "Adds support for custom fields and tags."
+						}
+					},
+					{
+						"name": "time_zone",
+						"string": {
+							"computed_optional_required": "computed_optional",
+							"validators": [
+								{
+									"custom": {
+										"imports": [
+											{
+												"path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+											}
+										],
+										"schema_definition": "stringvalidator.LengthAtLeast(1)"
+									}
+								}
+							]
+						}
+					},
+					{
+						"name": "circuit_count",
+						"int64": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "created",
+						"string": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "device_count",
+						"int64": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "display",
+						"string": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "display_url",
+						"string": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "id",
+						"int64": {
+							"computed_optional_required": "computed",
+							"description": "A unique integer value identifying this site."
+						}
+					},
+					{
+						"name": "last_updated",
+						"string": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "prefix_count",
+						"int64": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "rack_count",
+						"int64": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "url",
+						"string": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "virtualmachine_count",
+						"int64": {
+							"computed_optional_required": "computed"
+						}
+					},
+					{
+						"name": "vlan_count",
+						"int64": {
+							"computed_optional_required": "computed"
+						}
+					}
+				]
+			}
+		}
+	],
+	"version": "0.1"
+}

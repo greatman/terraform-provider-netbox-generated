@@ -1,0 +1,24 @@
+provider:
+  name: netbox
+  schema:
+    attributes:
+
+data_sources:
+  site:
+    read:
+      path: /api/dcim/sites/{id}/
+      method: GET
+resources:
+  site:
+    create:
+      path: /api/dcim/sites/
+      method: POST
+    read:
+      path: /api/dcim/sites/{id}/
+      method: GET
+    update:
+      path: /api/dcim/sites/{id}/
+      method: PUT
+    delete:
+      path: /api/dcim/sites/{id}/
+      method: DELETE
